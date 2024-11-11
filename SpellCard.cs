@@ -26,7 +26,7 @@ namespace Swen1.MTCG_Petrovic
             }
 
             // Spezialregel: FireElves weichen Drachen aus
-            if (this.Element == "fire" && opponent.Name == "Dragon" && this.Name == "FireElf")
+            if (opponent.Name == "Dragon" && this.Name == "FireElf")
             {
                 return 0;  // FireElf nimmt keinen Schaden von Drachen
             }
