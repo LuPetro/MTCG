@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Swen1.MTCG_Petrovic
 {
-    public class SpellCard : Card, IBattlable
+    public class SpellCard : Card, IBattleable
     {
         public SpellCard(string name, int damage, string element)
             : base(name, damage, element) { }
