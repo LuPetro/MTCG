@@ -10,6 +10,14 @@ namespace Swen1.MTCG_Petrovic
     {
         public static Card Fight(Card card1, Card card2)
         {
+
+            // Spezialfall: FireElf weicht Drachen aus -> Unentschieden
+            if ((card1.Name == "FireElf" && card2.Name == "Dragon") ||
+                (card2.Name == "FireElf" && card1.Name == "Dragon"))
+            {
+                return null;
+            }
+
             // Berechne den Schaden von card1 gegen card2 und umgekehrt
             int damageCard1 = (card1 as IBattleable)?.CalculateDamageAgainst(card2) ?? 0;
             int damageCard2 = (card2 as IBattleable)?.CalculateDamageAgainst(card1) ?? 0;
