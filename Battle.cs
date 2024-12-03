@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Swen1.MTCG_Petrovic.Models;
 
 namespace Swen1.MTCG_Petrovic
 {
@@ -30,7 +31,7 @@ namespace Swen1.MTCG_Petrovic
             else if (damageCard2 > damageCard1)
             {
                 return card2;  // card2 gewinnt
-            }
+            }   
 
             return null;  // Unentschieden
         }
