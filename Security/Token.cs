@@ -8,9 +8,16 @@ namespace Swen1.MTCG_Petrovic.Security
 
         public static string GenerateToken(Models.User user)
         {
-            string token = Guid.NewGuid().ToString();
-            _tokens[token] = user;
-            return token;
+            if (Program.DEBUG_MODE)
+            {
+                string token = $"{user.Username}-testToken";
+                _tokens[token] = user;
+                return token;
+            }
+
+            string randomToken = Guid.NewGuid().ToString();
+            _tokens[randomToken] = user;
+            return randomToken;
         }
 
         public static (bool Success, Models.User? User) Authenticate(string token)

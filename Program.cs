@@ -6,8 +6,15 @@ namespace Swen1.MTCG_Petrovic
 {
     internal class Program
     {
+        public static bool DEBUG_MODE = Environment.GetEnvironmentVariable("DEBUG_MODE") == "true";
+
         static void Main(string[] args)
         {
+            if (DEBUG_MODE)
+            {
+                Console.WriteLine("DEBUG MODE AKTIVIERT: Tokens sind vordefiniert.");
+            }
+
             HttpSvr server = new();
 
             server.Incoming += (sender, e) =>
