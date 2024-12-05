@@ -1,16 +1,20 @@
 @echo off
-set DEBUG_MODE=true
-dotnet run
 
 REM ---------------------------------------
 echo 1) Benutzer registrieren
-curl -i -X POST http://localhost:12000/users --header "Content-Type: application/json" -d "{\"username\":\"kienboec\", \"password\":\"daniel\"}"
-curl -i -X POST http://localhost:12000/users --header "Content-Type: application/json" -d "{\"username\":\"admin\", \"password\":\"istrator\"}"
+curl -i -X POST http://localhost:12000/users --header "Content-Type: application/json" -d "{\"Username\":\"kienboec\", \"Password\":\"daniel\"}"
+curl -i -X POST http://localhost:12000/users --header "Content-Type: application/json" -d "{\"Username\":\"admin\", \"Password\":\"istrator\"}"
+REM ---------------------------------------
+
+REM ---------------------------------------
+echo 1) Benutzer registrieren (nochmals)
+curl -i -X POST http://localhost:12000/users --header "Content-Type: application/json" -d "{\"Username\":\"kienboec\", \"Password\":\"daniel\"}"
+curl -i -X POST http://localhost:12000/users --header "Content-Type: application/json" -d "{\"Username\":\"admin\", \"Password\":\"istrator\"}"
 REM ---------------------------------------
 
 echo 2) Benutzer einloggen
-curl -i -X POST http://localhost:12000/sessions --header "Content-Type: application/json" -d "{\"username\":\"kienboec\", \"password\":\"daniel\"}"
-curl -i -X POST http://localhost:12000/sessions --header "Content-Type: application/json" -d "{\"username\":\"admin\", \"password\":\"istrator\"}"
+curl -i -X POST http://localhost:12000/sessions --header "Content-Type: application/json" -d "{\"Username\":\"kienboec\", \"Password\":\"daniel\"}"
+curl -i -X POST http://localhost:12000/sessions --header "Content-Type: application/json" -d "{\"Username\":\"admin\", \"Password\":\"istrator\"}"
 REM ---------------------------------------
 
 echo 3) Benutzerinformationen abrufen
