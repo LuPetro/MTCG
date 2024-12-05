@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Swen1.MTCG_Petrovic.Server.HttpHeader" Collapsed="true">
+  <Class Name="Swen1.MTCG_Petrovic.Server.HttpHeader">
     <Position X="14" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
       <FileName>Server\HttpHeader.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Swen1.MTCG_Petrovic.Server.HttpStatusCode" Collapsed="true">
+  <Class Name="Swen1.MTCG_Petrovic.Server.HttpStatusCode">
     <Position X="18.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAAAAAAAAAAAAAACAAAAAEBAAAACAA=</HashCode>
@@ -21,28 +21,28 @@
       <FileName>Server\HttpSvrEventArgs.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Swen1.MTCG_Petrovic.Server.HttpSvr" Collapsed="true">
+  <Class Name="Swen1.MTCG_Petrovic.Server.HttpSvr">
     <Position X="27.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAQAAgIAAAAAAAAAI=</HashCode>
       <FileName>Server\HttpSvr.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Swen1.MTCG_Petrovic.Security.Token" Collapsed="true">
+  <Class Name="Swen1.MTCG_Petrovic.Security.Token">
     <Position X="16.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAEAAAAAAAAAAAAIAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Security\Token.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Swen1.MTCG_Petrovic.Models.User" Collapsed="true">
+  <Class Name="Swen1.MTCG_Petrovic.Models.User">
     <Position X="20.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAABAAQAACAIIAAABAIACAABAAAAAAAA=</HashCode>
       <FileName>Models\User.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Swen1.MTCG_Petrovic.Models.Package" Collapsed="true">
+  <Class Name="Swen1.MTCG_Petrovic.Models.Package">
     <Position X="23" Y="1.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACCAAAAAAAAAAAAAAAAAAIAAAAAEAAAgAAAAAAAAA=</HashCode>
@@ -117,10 +117,10 @@
       <FileName>Exceptions\UserException.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Swen1.MTCG_Petrovic.Program" Collapsed="true">
+  <Class Name="Swen1.MTCG_Petrovic.Program">
     <Position X="25.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
