@@ -26,8 +26,8 @@ namespace Swen1.MTCG_Petrovic.Handlers
                 JsonNode? json = JsonNode.Parse(e.Payload);
                 if (json != null)
                 {
-                    string username = (string)json["username"]!;
-                    string password = (string)json["password"]!;
+                    string username = (string)json["Username"]!;
+                    string password = (string)json["Password"]!;
 
                     (bool success, Models.User? user) = Models.User.Authenticate(username, password);
 
